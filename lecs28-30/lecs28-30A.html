@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 7</title>
+  </head>
+  <body>
+    <form>
+      <!-- Task 1 -->
+      <div>
+        <input
+          type="text"
+          name="token"
+          placeholder="Enter your token"
+          value="b92f1fc2fce391ad7af633723afd3055"
+          hidden
+        />
+      </div>
+      <div>
+        <label>Email:</label>
+        <br />
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter your email"
+          value="o@o.com"
+          readonly
+        />
+      </div>
+      <hr />
+      <div>
+        <label>Username:</label>
+        <br />
+        <input
+          type="text"
+          name="username"
+          placeholder="Enter your username"
+          minlength="5"
+          maxlength="20"
+          required
+          autofocus
+        />
+      </div>
+      <hr />
+      <!-- Task 2 -->
+      <label>skills:</label>
+      <div>
+        <input
+          id="problem-solving"
+          type="checkbox"
+          name="skills"
+          value="Problem Solving"
+        />
+        <label for="problem-solving">Problem Solving</label>
+      </div>
+      <div>
+        <input
+          id="logical-thinking"
+          type="checkbox"
+          name="skills"
+          value="Logical Thinking"
+        />
+        <label for="logical-thinking">Logical Thinking</label>
+      </div>
+      <div>
+        <input
+          id="advanced-search"
+          type="checkbox"
+          name="skills"
+          value="Advanced Search"
+          checked
+        />
+        <label for="advanced-search">Advanced Search</label>
+      </div>
+      <div>
+        <input id="analysis" type="checkbox" name="skills" value="Analysis" />
+        <label for="analysis">Analysis</label>
+      </div>
+      <div>
+        <input id="planning" type="checkbox" name="skills" value="Planning" />
+        <label for="planning">Planning</label>
+      </div>
+      <hr />
+      <label>job:</label>
+      <div>
+        <input
+          id="front-end-developer"
+          type="radio"
+          name="job"
+          value="Front-End Developer"
+        />
+        <label for="front-end-developer">Front-End Developer</label>
+      </div>
+      <div>
+        <input
+          id="back-end-developer"
+          type="radio"
+          name="job"
+          value="Back-End Developer"
+          checked
+        />
+        <label for="back-end-developer">Back-End Developer</label>
+      </div>
+      <div>
+        <input
+          id="business-analyst"
+          type="radio"
+          name="job"
+          value="Business Analyst"
+        />
+        <label for="business-analyst">Business Analyst</label>
+      </div>
+      <div>
+        <input
+          id="project-manager"
+          type="radio"
+          name="job"
+          value="Project Manager"
+        />
+        <label for="project-manager">Project Manager</label>
+      </div>
+      <div>
+        <input id="scrum-master" type="radio" name="job" value="Scrum Master" />
+        <label for="scrum-master">Scrum Master</label>
+      </div>
+      <hr />
+      <!-- Task 3 -->
+      <div>
+        <label>Choose language: </label>
+        <select name="language" title="language">
+          <optgroup label="PHP">
+            <option value="v5.0">v5.0</option>
+            <option value="v7.0">v7.0</option>
+            <option value="v8.0">v8.0</option>
+          </optgroup>
+          <optgroup label="Python">
+            <option value="v2.0">v2.0</option>
+            <option value="v3.0">v3.0</option>
+            <option value="v3.9">v3.9</option>
+          </optgroup>
+        </select>
+      </div>
+      <hr />
+      <div>
+        <textarea
+          name="brief"
+          placeholder="Write Here Why You Want To Learn Programming"
+          cols="41"
+          rows="11"
+        ></textarea>
+      </div>
+      <div>
+        <input type="reset" value="Empty" />
+        <input type="submit" value="Send" />
+      </div>
+    </form>
+  </body>
+</html>
